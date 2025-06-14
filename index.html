@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FINANCIAL TRADER</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://img.freepik.com/premium-photo/creative-glowing-forex-chart-with-map-dark-blue-background-trade-finance-concept-3d-rendering_670147-11936.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.85);
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111827;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #3b82f6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2563eb;
+    }
+
+    .videos, .course, .about {
+      padding: 40px 15px 20px;
+      text-align: center;
+    }
+
+    .videos h2, .course h2, .about h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #3b82f6;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .video-grid iframe {
+      width: 100%;
+      height: 220px;
+      border-radius: 12px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      color: #aaa;
+      font-size: 0.8rem;
+    }
+
+    @media (min-width: 600px) {
+      .navbar {
+        justify-content: space-between;
+      }
+
+      .menu {
+        font-size: 1rem;
+        gap: 25px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+      }
+
+      .video-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+
+      .video-grid iframe {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+
+    <!-- 🔷 Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://yt3.ggpht.com/quLnAs3rGaeqSpyAYRnkxymk-BDCX-xeLroH2ec5_S_EfM632TrAYsjh9zrIiTkc7PnWJD1a=s176-c-k-c0x00ffffff-no-rj-mo" alt="Financial Trader Logo" />
+      </div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#videos">Videos</a>
+        <a href="#course">Course</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+
+    <!-- 🔷 Hero -->
+    <div class="hero" id="home">
+      <h1>FINANCIAL TRADER</h1>
+      <p>Smart Trading | Smart Learning</p>
+      <button class="btn">Join Telegram</button>
+    </div>
+
+    <!-- 🔷 Videos Section -->
+    <section class="videos" id="videos">
+      <h2>🎥 Latest YouTube Videos</h2>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/rwzogN0ZU7Q" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/7DsM3tdeJN0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/L-qjQRHJEJE" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- 🔷 Course Section -->
+    <section class="course" id="course">
+      <h2>📘 Upcoming Course</h2>
+      <p>Exclusive Trading Course Launching Soon! Stay tuned.</p>
+      <button class="btn">Notify Me</button>
+    </section>
+
+    <!-- 🔷 About Section -->
+    <section class="about" id="about">
+      <h2>🙋 About</h2>
+      <p>Financial Trader is a YouTuber and trader, helping thousands understand charts, strategies and market psychology.</p>
+    </section>
+
+    <!-- 🔷 Footer -->
+    <footer>
+      © 2025 FINANCIAL TRADER | Created by Manish Chaudhary
+    </footer>
+
+  </div>
+
+</body>
+</html>
